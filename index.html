@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blaugrana Tactics</title>
+  <meta name="description" content="Pozycje w piłce nożnej i ich role w FC Barcelonie 2026/27: interaktywne boisko, taktyki Flicka i profile zawodników.">
+  <meta name="theme-color" content="#070b1a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23004d98'/%3E%3Crect x='8' width='8' height='32' fill='%23a50044'/%3E%3Crect x='24' width='8' height='32' fill='%23a50044'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23edbb00'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Na górę">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="brand-text">Blaugrana<b>Tactics</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#pozycje" data-nav>Pozycje</a>
+      <a href="#taktyki" data-nav>Taktyki</a>
+      <a href="#kadra" data-nav>Kadra</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">FC Barcelona · sezon 2026/27</p>
+        <h1 class="hero-title">
+          <span class="line"><span>Każda</span></span>
+          <span class="line"><span>pozycja.</span></span>
+          <span class="line"><span class="grad">Każda rola.</span></span>
+        </h1>
+        <p class="hero-lead reveal">Od bramkarza-libero po fałszywą dziewiątkę: pozycje w piłce nożnej wyjaśnione na boisku, a potem przełożone na kadrę Hansiego Flicka. Przełączaj taktyki, podmieniaj zawodników i klikaj w nich, żeby zobaczyć, kto co robi.</p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#taktyki">Otwórz tablicę taktyczną</a>
+          <a class="btn btn-ghost" href="#pozycje">Najpierw pozycje</a>
+        </div>
+        <dl class="hero-stats reveal">
+          <div><dt data-count="13">0</dt><dd>typów pozycji</dd></div>
+          <div><dt data-count="5">0</dt><dd>taktyk</dd></div>
+          <div><dt data-count="27">0</dt><dd>zawodników</dd></div>
+        </dl>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="tilt">
+          <div class="mini-pitch" id="heroPitch"></div>
+        </div>
+        <div class="hero-formation" id="heroFormation">4-3-3</div>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+  </section>
+
+  <!-- 01 POZYCJE -->
+  <section class="section" id="pozycje">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <div>
+        <h2>Pozycje na boisku</h2>
+        <p>Najedź lub kliknij znacznik, żeby zobaczyć strefę działania pozycji. Poniżej pełna tabela z wariantami ról i tym, kto w Barcelonie gra na danej pozycji.</p>
+      </div>
+    </div>
+
+    <div class="pos-layout">
+      <div class="pitch-card reveal">
+        <div class="board board-positions" id="posBoard">
+          <div class="pitch-svg" id="posPitch"></div>
+          <div class="markers" id="posMarkers"></div>
+        </div>
+        <div class="legend">
+          <span><i class="dot gk"></i>Bramkarz</span>
+          <span><i class="dot def"></i>Obrona</span>
+          <span><i class="dot mid"></i>Pomoc</span>
+          <span><i class="dot fwd"></i>Atak</span>
+          <span class="legend-hint">Kierunek ataku →</span>
+        </div>
+      </div>
+      <article class="pos-detail reveal" id="posDetail" aria-live="polite"></article>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table class="pos-table" id="posTable">
+        <thead>
+          <tr>
+            <th>Skrót</th>
+            <th>Pozycja</th>
+            <th>Strefa</th>
+            <th>Główne zadania</th>
+            <th>Warianty ról</th>
+            <th>W Barcelonie 2026/27</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 02 TAKTYKI -->
+  <section class="section" id="taktyki">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <div>
+        <h2>Tablica taktyczna Barçy</h2>
+        <p>Wybierz ustawienie, a zawodnicy przebiegną na nowe pozycje. Kliknij piłkarza, żeby zobaczyć jego zdjęcie i rolę. W trybie zmian możesz wstawić do składu kogoś z ławki.</p>
+      </div>
+    </div>
+
+    <div class="tactic-tabs reveal" id="tacticTabs" role="tablist"></div>
+
+    <div class="tactic-layout">
+      <div class="board-card reveal">
+        <div class="board board-tactic" id="tacBoard">
+          <div class="pitch-svg" id="tacPitch"></div>
+          <div class="tokens" id="tokens"></div>
+          <div class="ball" id="ball" aria-hidden="true"></div>
+          <div class="goal-burst" id="goalBurst" aria-hidden="true">GOL!</div>
+        </div>
+        <div class="board-controls">
+          <button class="chip-btn is-on" id="btnArrows" aria-pressed="true"><span class="sw"></span>Ruchy</button>
+          <button class="chip-btn" id="btnPlay"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg>Odtwórz akcję</button>
+          <button class="chip-btn" id="btnSwap" aria-pressed="false"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 7h11l-3-3M17 17H6l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tryb zmian</button>
+          <button class="chip-btn ghost" id="btnReset">Przywróć skład</button>
+        </div>
+        <p class="swap-hint" id="swapHint">Tryb zmian: kliknij zawodnika na boisku, potem innego na boisku albo na ławce.</p>
+      </div>
+
+      <aside class="tactic-info reveal" id="tacticInfo"></aside>
+    </div>
+
+    <div class="bench reveal">
+      <div class="bench-head">
+        <h3>Ławka</h3>
+        <span class="muted" id="benchCount"></span>
+      </div>
+      <div class="bench-list" id="bench"></div>
+    </div>
+
+    <h3 class="sub-h reveal">Rola każdego zawodnika w tym ustawieniu</h3>
+    <div class="roles-grid" id="rolesGrid"></div>
+  </section>
+
+  <!-- 03 KADRA -->
+  <section class="section" id="kadra">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <div>
+        <h2>Kadra i profile</h2>
+        <p>Pierwsza drużyna według numerów ogłoszonych po zamknięciu letniego okna transferowego 2026. Kliknij kartę, żeby otworzyć pełny profil.</p>
+      </div>
+    </div>
+    <div class="filters reveal" id="filters" role="tablist">
+      <button class="filter is-on" data-f="ALL">Wszyscy</button>
+      <button class="filter" data-f="GK">Bramkarze</button>
+      <button class="filter" data-f="DEF">Obrońcy</button>
+      <button class="filter" data-f="MID">Pomocnicy</button>
+      <button class="filter" data-f="FWD">Napastnicy</button>
+    </div>
+    <div class="squad" id="squad"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><b>Stan danych: wrzesień 2026.</b> Numery i skład według komunikatu klubu o numerach na sezon 2026/27 oraz relacji z meczów z Valencią, Levante i Sevillą. Ustawienia 3-2-5 i 4-4-2 to fazy gry wynikające z 4-3-3, a 3-4-3 to wariant hipotetyczny.</p>
+      <p>Zdjęcia zawodników są pobierane na żywo z Wikipedii (Wikimedia Commons, licencje CC; autor i licencja na stronie pliku). Bez połączenia z Wikipedią strona pokazuje grafiki zastępcze. Własne zdjęcia można dodać w <code>js/data.js</code> (pole <code>photo</code>).</p>
+      <p class="muted">Projekt fanowski, niezwiązany z FC Barcelona.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL ZAWODNIKA -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mName" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" id="modalCard">
+      <button class="modal-close" data-close aria-label="Zamknij">&times;</button>
+      <button class="modal-nav prev" id="mPrev" aria-label="Poprzedni zawodnik">&#8249;</button>
+      <button class="modal-nav next" id="mNext" aria-label="Następny zawodnik">&#8250;</button>
+      <div class="modal-photo" id="mPhoto"></div>
+      <div class="modal-body" id="mBody"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
