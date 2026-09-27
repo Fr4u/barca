@@ -1210,15 +1210,8 @@
   /* ======================================================================
      Start
      ====================================================================== */
-  initScroll();
-  initCursor();
-  initHero();
-  initPositions();
-  initTactics();
-  initRoster();
-  initPlayer();
-  initChapterReveals();
-  initResize();
-  Photo.init();
+  const safe = (fn) => { try { fn(); } catch (err) { console.error(err); } };
+  [initScroll, initCursor, initHero, initPositions, initTactics, initRoster, initPlayer, initChapterReveals, initResize, () => Photo.init()].forEach(safe);
+  window.__btReady = true;
   if (document.fonts && window.ScrollTrigger) document.fonts.ready.then(() => { ScrollTrigger.refresh(); moveBar(false); });
 })();
