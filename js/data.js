@@ -445,16 +445,16 @@ window.TACTICS = [
       ['ldm', 'LDM', 46, 36, 'espart', 'Lewy obrońca, który zszedł do środka. Z Rodrim tworzy dwójkę przed trójką obrońców.'],
       ['rhs', 'RCM', 78, 68, 'fermin', 'Prawa półprzestrzeń. Wbiega między środkowego i bocznego obrońcę rywala.'],
       ['lhs', 'LCM', 74, 34, 'pedri', 'Lewa półprzestrzeń. Odbiera piłkę między liniami i szuka podania do Raphinhi lub Gordona.'],
-      ['rw', 'RW', 82, 94, 'yamal', 'Prawy korytarz przy linii bocznej. Szerokość jest po to, by dostać piłkę 1 na 1.'],
+      ['rw', 'RW', 82, 91, 'yamal', 'Prawy korytarz przy linii bocznej. Szerokość jest po to, by dostać piłkę 1 na 1.'],
       ['cf', 'CF', 90, 50, 'raphinha', 'Środkowy korytarz. Przytrzymuje stoperów przy linii obrony.'],
-      ['lw', 'LW', 82, 6, 'gordon', 'Lewy korytarz. Czeka szeroko na zmianę strony gry i atakuje dalszy słupek.'],
+      ['lw', 'LW', 82, 9, 'gordon', 'Lewy korytarz. Czeka szeroko na zmianę strony gry i atakuje dalszy słupek.'],
     ],
     arrows: [
       ['move', [27, 87], [32, 76]],
       ['move', [27, 13], [46, 36]],
       ['move', [52, 36], [74, 34]],
       ['move', [54, 64], [78, 68]],
-      ['run', [82, 6], [95, 40]],
+      ['run', [82, 9], [95, 40]],
     ],
     sequence: ['cb', 'rdm', 'rhs', 'rw', 'lw', 'GOAL'],
   },
@@ -509,9 +509,9 @@ window.TACTICS = [
       ['rcm', 'RCM', 54, 70, 'gavi', 'Prawy wierzchołek rombu. Pressing i wbiegnięcia między obrońców.'],
       ['lcm', 'LCM', 54, 30, 'pedri', 'Lewy wierzchołek rombu. Kontroluje tempo i szuka Olmo między liniami.'],
       ['cam', 'CAM', 68, 50, 'olmo', 'Enganche, szczyt rombu. Łączy pomoc z trójką napastników.'],
-      ['rw', 'RW', 82, 93, 'yamal', 'Skrzydłowy przy samej linii, jak w klasycznej szkole Cruyffa.'],
+      ['rw', 'RW', 82, 91, 'yamal', 'Skrzydłowy przy samej linii, jak w klasycznej szkole Cruyffa.'],
       ['cf', 'CF', 88, 50, 'jesus', 'Napastnik do kombinacji: schodzi do Olmo i gra z pierwszej piłki.'],
-      ['lw', 'LW', 82, 7, 'raphinha', 'Lewy skrzydłowy, schodzi do środka na prawą nogę i strzela.'],
+      ['lw', 'LW', 82, 9, 'raphinha', 'Lewy skrzydłowy, schodzi do środka na prawą nogę i strzela.'],
     ],
     arrows: [
       ['run', [54, 70], [80, 64]],
@@ -521,3 +521,38 @@ window.TACTICS = [
     sequence: ['cb', 'cdm', 'lcm', 'cam', 'rcm', 'cf', 'GOAL'],
   },
 ];
+
+/* ---------- 4. Reguły doboru zdjęć (tylko w barwach FC Barcelony) ----------
+ * m  = warianty nazwiska, które muszą wystąpić w tytule/opisie pliku
+ * ex = poprzednie kluby; plik, który je wymienia, jest odrzucany
+ *      (żeby nie pokazać zawodnika w koszulce innej drużyny)
+ */
+window.PHOTO_RULES = {
+  joan: { m: ['joan garcia'], ex: ['espanyol'] },
+  szczesny: { m: ['szczesny'], ex: ['juventus', 'arsenal', 'roma', 'legia', 'brighton', 'brentford'] },
+  livakovic: { m: ['livakovic'], ex: ['dinamo', 'zagreb', 'fenerbahce', 'zadar'] },
+  cancelo: { m: ['cancelo'], ex: ['manchester city', 'juventus', 'al-hilal', 'al hilal', 'bayern', 'inter', 'valencia', 'benfica'] },
+  balde: { m: ['alejandro balde', 'alex balde'], ex: [] },
+  farinas: { m: ['farinas'], ex: ['villarreal'] },
+  cubarsi: { m: ['cubarsi'], ex: ['girona'] },
+  christensen: { m: ['andreas christensen'], ex: ['chelsea', 'monchengladbach', 'gladbach', 'brondby'] },
+  martin: { m: ['gerard martin'], ex: ['cornella', 'damm'] },
+  kounde: { m: ['kounde'], ex: ['sevilla', 'bordeaux'] },
+  eric: { m: ['eric garcia'], ex: ['manchester city', 'girona'] },
+  espart: { m: ['espart'], ex: [] },
+  gavi: { m: ['gavi'], ex: [] },
+  fermin: { m: ['fermin lopez', 'fermin'], ex: ['linares'] },
+  pedri: { m: ['pedri'], ex: ['las palmas'] },
+  rodri: { m: ['rodri', 'rodrigo hernandez'], ex: ['manchester city', 'atletico', 'villarreal'] },
+  olmo: { m: ['dani olmo'], ex: ['leipzig', 'dinamo', 'zagreb'] },
+  dejong: { m: ['frenkie de jong', 'frenkie'], ex: ['ajax', 'willem'] },
+  bernal: { m: ['marc bernal'], ex: [] },
+  yamal: { m: ['lamine yamal', 'lamine'], ex: [] },
+  raphinha: { m: ['raphinha'], ex: ['leeds', 'rennes', 'sporting', 'vitoria', 'avai'] },
+  jesus: { m: ['gabriel jesus'], ex: ['arsenal', 'manchester city', 'palmeiras'] },
+  adeyemi: { m: ['adeyemi'], ex: ['dortmund', 'bvb', 'salzburg', 'liefering', 'unterhaching'] },
+  gordon: { m: ['anthony gordon'], ex: ['newcastle', 'everton', 'preston'] },
+  bardghji: { m: ['bardghji'], ex: ['copenhagen', 'kobenhavn', 'fck'] },
+  bisiwu: { m: ['bisiwu'], ex: ['brugge', 'club nxt', 'leuven'] },
+  abdelkarim: { m: ['abdelkarim', 'abdel karim'], ex: ['al ahly', 'ahly'] },
+};

@@ -2,29 +2,37 @@
 
 Interaktywna strona o pozycjach w piłce nożnej i ich rolach w FC Barcelonie (sezon 2026/27, stan kadry: wrzesień 2026).
 
-- **Pozycje**: boisko ze wszystkimi typami pozycji (GK, SW, CB, LB/RB, LWB/RWB, CDM, CM, CAM, LM/RM, LW/RW, SS, CF, F9), strefy działania po najechaniu, pełna tabela z wariantami ról i zawodnikami Barçy.
-- **Tablica taktyczna**: 4-3-3, 4-2-3-1, 3-2-5 (faza posiadania), 4-4-2 (pressing), 3-4-3 (romb Cruyffa). Animowane przejścia, strzałki ruchów, animacja akcji z piłką, tryb zmian (wymiana z ławką), rola każdego zawodnika w danym ustawieniu.
-- **Kadra**: karty wszystkich zawodników z filtrem i profilem po kliknięciu (zdjęcie, pozycje na mini-boisku, rola, mocne strony).
+- **01 Anatomia boiska**: scrollytelling po liniach (bramkarz, obrona, pomoc, atak) na przyklejonym boisku z 13 typami pozycji. Każdy znacznik otwiera kartę pozycji: strefę, zadania, cechy, warianty ról i zawodników Barçy. Pod spodem pełna tabela.
+- **02 Tablica meczowa**: 4-3-3, 4-2-3-1, 3-2-5 (faza posiadania), 4-4-2 (pressing) i 3-4-3 (romb Cruyffa). Zawodnicy przebiegają między ustawieniami. Są warstwy (ruchy, korytarze boiska, linie podań) i animacja akcji zakończona golem. Zawodnika można przeciągnąć z ławki na boisko albo zamienić dwóch piłkarzy na boisku; alternatywnie działa tryb zmian (klikanie). Pod boiskiem jest opis roli każdego z jedenastu zawodników.
+- **03 Kadra**: lista 27 zawodników z podglądem zdjęcia pod kursorem. Kliknięcie otwiera pełnoekranowy profil ze zdjęciem, rolą w bieżącej taktyce, pozycjami na mini-boisku i mocnymi stronami.
 
 ## Uruchomienie
 
-Czysty HTML/CSS/JS bez kroku budowania. Wystarczy otworzyć `index.html` w przeglądarce albo uruchomić lokalny serwer:
+Czysty HTML/CSS/JS bez budowania. Biblioteki (GSAP, Lenis) i fonty są w repozytorium, więc strona działa bez CDN.
 
 ```sh
-python3 -m http.server 8000
-# http://localhost:8000
+python3 -m http.server 8000   # http://localhost:8000
 ```
 
-Na GitHub Pages: Settings → Pages → Deploy from branch → wybierz gałąź i katalog `/ (root)`.
+Można też otworzyć `index.html` bezpośrednio albo włączyć GitHub Pages (Settings → Pages → Deploy from branch).
 
-## Zdjęcia zawodników
+## Zdjęcia: tylko w barwach FC Barcelony
 
-Zdjęcia są pobierane w przeglądarce z API Wikipedii (miniatury z Wikimedia Commons, na licencjach CC; link do pliku źródłowego pojawia się w profilu zawodnika). Strona sprawdza, czy opis artykułu dotyczy piłkarza, żeby nie pokazać zdjęcia innej osoby. Bez dostępu do Wikipedii wyświetlane są grafiki zastępcze w barwach klubu.
+Kolejność źródeł:
 
-Własne zdjęcie: wrzuć plik np. do `img/players/pedri.jpg` i dodaj pole `photo: 'img/players/pedri.jpg'` do zawodnika w `js/data.js`.
+1. **Własne pliki** z `js/photos.js`, np. `pedri: { src: 'img/players/pedri.jpg', credit: 'FC Barcelona' }`. Mają pierwszeństwo.
+2. **Wikimedia Commons**, wyszukiwane w przeglądarce. Plik jest akceptowany tylko wtedy, gdy:
+   - jego tytuł, opis lub kategorie zawierają nazwisko zawodnika,
+   - wymieniają FC Barcelonę (Barça, FCB, Camp Nou, Joan Gamper itp.),
+   - nie wymieniają poprzednich klubów zawodnika (lista w `PHOTO_RULES` w `js/data.js`), reprezentacji, turniejów reprezentacyjnych ani nie jest autografem, muralem czy rysunkiem.
+
+   Spośród pasujących wygrywa najnowsze, pionowe zdjęcie z nazwiskiem w tytule. W profilu widać autora, licencję i link do pliku.
+3. **Grafika koszulki Barçy** z nazwiskiem i numerem, gdy żadne zdjęcie nie spełnia warunków. Strona nie pokazuje wtedy zdjęcia z innego klubu.
+
+Filtr opiera się na opisach plików, więc nie jest nieomylny. Nowi zawodnicy (lato 2026) mogą jeszcze nie mieć wolnych zdjęć w barwach Barçy na Commons. Wynik wyszukiwania jest zapamiętywany w przeglądarce na 3 dni.
 
 ## Dane
 
-Wszystko jest w `js/data.js`: katalog pozycji, kadra z opisami ról i definicje taktyk (współrzędne w procentach boiska). Numery według ogłoszenia klubu z początku września 2026, składy 4-3-3 i 4-2-3-1 według meczów z Levante i Sevillą (wrzesień 2026). 3-4-3 to wariant hipotetyczny.
+Wszystko jest w `js/data.js`: katalog pozycji, kadra z opisami ról, definicje taktyk (współrzędne w procentach boiska) i reguły doboru zdjęć. Numery według ogłoszenia klubu z początku września 2026, składy 4-3-3 i 4-2-3-1 według meczów z Levante i Sevillą. 3-4-3 to wariant hipotetyczny.
 
 Projekt fanowski, niezwiązany z FC Barcelona.
