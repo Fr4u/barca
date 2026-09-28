@@ -1,0 +1,32 @@
+{
+  "title": "TWO LEFT FEET · Lamine Yamal & Raphinha",
+  "bpm": 130,
+  "fps": 60,
+  "width": 1080,
+  "height": 1920,
+  "sampleRate": 48000,
+  "duration": 23.6,
+  "sections": [
+    { "name": "intro", "from": 0, "to": 8 },
+    { "name": "yamal", "from": 8, "to": 24 },
+    { "name": "raphinha", "from": 24, "to": 40 },
+    { "name": "finale", "from": 40, "to": 51.2 }
+  ],
+  "hits": [
+    { "b": 0, "type": "slam" }, { "b": 1, "type": "slam" }, { "b": 2, "type": "slam" },
+    { "b": 4, "type": "slam" }, { "b": 5, "type": "slam" },
+    { "b": 8, "type": "drop" }, { "b": 9, "type": "slam" }, { "b": 10, "type": "slam" }, { "b": 11, "type": "tick" },
+    { "b": 12, "type": "whoosh" }, { "b": 14, "type": "shot" }, { "b": 16, "type": "goal" },
+    { "b": 17, "type": "card" }, { "b": 18, "type": "card" }, { "b": 19, "type": "card" },
+    { "b": 20, "type": "big" }, { "b": 22, "type": "card" }, { "b": 23, "type": "whoosh" },
+    { "b": 24, "type": "drop" }, { "b": 25, "type": "slam" }, { "b": 26, "type": "tick" }, { "b": 27, "type": "whoosh" },
+    { "b": 29.5, "type": "steal" }, { "b": 31, "type": "shot" }, { "b": 32, "type": "goal" },
+    { "b": 33, "type": "card" }, { "b": 34, "type": "card" }, { "b": 35, "type": "card" },
+    { "b": 36, "type": "slam" }, { "b": 37, "type": "slam" },
+    { "b": 40, "type": "drop" }, { "b": 41, "type": "shot" }, { "b": 42.5, "type": "shot" }, { "b": 43, "type": "goal" },
+    { "b": 44, "type": "slam" }, { "b": 45, "type": "slam" }, { "b": 46, "type": "final" }
+  ],
+  "risers": [ { "from": 6, "to": 8 }, { "from": 22, "to": 24 }, { "from": 38, "to": 40 } ],
+  "gaps": [ { "from": 7.5, "to": 8 }, { "from": 39.5, "to": 40 } ],
+  "slowmo": [ { "from": 14, "to": 16 }, { "from": 29.5, "to": 32 }, { "from": 41, "to": 43 } ]
+}
