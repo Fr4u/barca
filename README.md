@@ -20,7 +20,7 @@ Można też otworzyć `index.html` bezpośrednio albo włączyć GitHub Pages (S
 
 Kolejność źródeł:
 
-1. **Własne pliki** z `js/photos.js`, np. `pedri: { src: 'img/players/pedri.jpg', credit: 'FC Barcelona' }`. Mają pierwszeństwo.
+1. **Oficjalne zdjęcia FC Barcelony** dla wszystkich 27 zawodników, pobrane z [serwisu klubu](https://www.fcbarcelona.com/en/football/first-team/players) i zapisane lokalnie w `img/players/`. Portrety 940×940 są używane w profilach i podglądzie pod kursorem, a miniatury 160×160 na boisku i listach. Działają bez internetu i mają pierwszeństwo przed pamięcią podręczną oraz Wikimedia Commons. Przypisania są w `js/photos.js`; źródła, linki do profili i sumy SHA-256 w `img/players/sources.json`. Profil zawodnika zawiera link do jego oficjalnej strony. Można też dodać własny plik w `js/photos.js`.
 2. **Wikimedia Commons**, wyszukiwane w przeglądarce. Plik jest akceptowany tylko wtedy, gdy:
    - jego tytuł, opis lub kategorie zawierają nazwisko zawodnika,
    - wymieniają FC Barcelonę (Barça, FCB, Camp Nou, Joan Gamper itp.),

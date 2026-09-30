@@ -234,7 +234,7 @@
         img.referrerPolicy = 'no-referrer';
         img.onload = () => { img.classList.add('ok'); el.classList.add('has-img'); };
         img.onerror = () => img.remove();
-        img.src = d.src;
+        img.src = el.dataset.mode === 'token' && d.thumb ? d.thumb : d.src;
         el.appendChild(img);
       });
     },
@@ -1024,7 +1024,7 @@
       current = pid;
       if (!pid) { gsap.to(card, { opacity: 0, scale: 0.6, duration: 0.35, ease: 'power3' }); return; }
       const p = byId[pid], ph = Photo.get(pid);
-      card.innerHTML = `${phHTML(p, 'big', 'square')}<span class="hc-src">${ph ? (ph.local ? 'Zdjęcie własne' : 'Wikimedia Commons') : (Photo.has(pid) ? 'Brak zdjęcia w barwach Barçy' : 'Szukam zdjęcia…')}</span>`;
+      card.innerHTML = `${phHTML(p, 'big', 'square')}<span class="hc-src">${ph ? (ph.official ? 'FC Barcelona · oficjalne zdjęcie' : (ph.local ? 'Zdjęcie własne' : 'Wikimedia Commons')) : (Photo.has(pid) ? 'Brak zdjęcia w barwach Barçy' : 'Szukam zdjęcia…')}</span>`;
       Photo.apply(card);
       gsap.to(card, { opacity: 1, scale: 1, duration: 0.45, ease: 'back.out(1.6)' });
     };
@@ -1060,7 +1060,8 @@
   function mediaHTML(p) {
     const ph = Photo.get(p.id);
     let credit;
-    if (ph && ph.local) credit = `<span class="pl-credit"><b>Zdjęcie</b>${esc(ph.credit || 'plik lokalny')}</span>`;
+    if (ph && ph.official) credit = `<a class="pl-credit" href="${esc(ph.page)}" target="_blank" rel="noopener" data-cursor="Źródło"><b>Oficjalne zdjęcie FC Barcelony</b>${esc(ph.credit)} · profil zawodnika na stronie klubu</a>`;
+    else if (ph && ph.local) credit = `<span class="pl-credit"><b>Zdjęcie</b>${esc(ph.credit || 'plik lokalny')}</span>`;
     else if (ph) credit = `<a class="pl-credit" href="${esc(ph.page)}" target="_blank" rel="noopener" data-cursor="Źródło"><b>Zdjęcie w barwach FC Barcelony · Wikimedia Commons</b>${esc(ph.artist || 'autor w opisie pliku')}${ph.license ? ' · ' + esc(ph.license) : ''}</a>`;
     else if (Photo.has(p.id)) credit = `<span class="pl-credit"><b>Brak wolnego zdjęcia w barwach Barçy</b>Zamiast zdjęcia z innego klubu pokazujemy koszulkę. Własne zdjęcie: js/photos.js</span>`;
     else credit = `<span class="pl-credit"><b>Szukam zdjęcia w barwach Barçy…</b>Wikimedia Commons</span>`;
