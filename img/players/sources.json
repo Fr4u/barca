@@ -25,6 +25,22 @@
           "height": 160,
           "bytes": 5278
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/joan.jpg",
+          "derived_from": "img/players/joan.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "8506dfee79323e6500d4c67b76a403bf0c0e45beb51ed5daf7d708f472ee1cdb",
+          "width": 320,
+          "height": 320,
+          "bytes": 23153
+        }
       }
     },
     {
@@ -48,6 +64,22 @@
           "width": 160,
           "height": 160,
           "bytes": 4594
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/szczesny.jpg",
+          "derived_from": "img/players/szczesny.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "50042b64f9f80ee1fc819bf6b23c3cd4a0987de7c8e3a9258194b20f16f321ae",
+          "width": 320,
+          "height": 320,
+          "bytes": 21729
         }
       }
     },
@@ -73,6 +105,30 @@
           "height": 160,
           "bytes": 49464
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/livakovic.jpg",
+          "derived_from": "img/players/livakovic.png",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "6f28d9257c8c60f8616ea026722ba6a721984677e57df2d3c2aaa3e720b86058",
+          "width": 320,
+          "height": 320,
+          "bytes": 19545
+        },
+        "web": {
+          "path": "img/players/web/livakovic.jpg",
+          "derived_from": "img/players/livakovic.png",
+          "sha256": "6a1fa8e474189181d176105228816ac7dd8d730e0419c62fb469b2e4079e232c",
+          "width": 940,
+          "height": 940,
+          "bytes": 161270
+        }
       }
     },
     {
@@ -96,6 +152,30 @@
           "width": 160,
           "height": 160,
           "bytes": 50501
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/cancelo.jpg",
+          "derived_from": "img/players/cancelo.png",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "6d1f80716450c51c68ae73240e0c66786fc3202267eab428465d4bcc49d56b32",
+          "width": 320,
+          "height": 320,
+          "bytes": 18299
+        },
+        "web": {
+          "path": "img/players/web/cancelo.jpg",
+          "derived_from": "img/players/cancelo.png",
+          "sha256": "bfc8b5cef9bbf94e53d3ed871e9d6169f0787df621260f43b2a87d3c92abd83b",
+          "width": 940,
+          "height": 940,
+          "bytes": 134347
         }
       }
     },
@@ -121,6 +201,22 @@
           "height": 160,
           "bytes": 3961
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/balde.jpg",
+          "derived_from": "img/players/balde.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "3a2a0f8bcf9913022fb519f8986aaa67dc8bebc0b8aa3faf94958af958b9baf6",
+          "width": 320,
+          "height": 320,
+          "bytes": 19588
+        }
       }
     },
     {
@@ -144,6 +240,22 @@
           "width": 160,
           "height": 160,
           "bytes": 4191
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/farinas.jpg",
+          "derived_from": "img/players/farinas.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "38a1a9f2ebc9200edd9fa640962b34631218b588f0708df50bb924e58ecd7950",
+          "width": 320,
+          "height": 320,
+          "bytes": 17646
         }
       }
     },
@@ -169,6 +281,22 @@
           "height": 160,
           "bytes": 3982
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/cubarsi.jpg",
+          "derived_from": "img/players/cubarsi.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "367d5994dc87eb8b6f3f8537ef612eed38ca3bbebd5238b192a3a7be56fe5d5a",
+          "width": 320,
+          "height": 320,
+          "bytes": 20710
+        }
       }
     },
     {
@@ -192,6 +320,22 @@
           "width": 160,
           "height": 160,
           "bytes": 4361
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/christensen.jpg",
+          "derived_from": "img/players/christensen.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "5687a86df24d975ed967a7cf7e272ec93d5a690c232784839c58b6431ece92c3",
+          "width": 320,
+          "height": 320,
+          "bytes": 20779
         }
       }
     },
@@ -217,6 +361,22 @@
           "height": 160,
           "bytes": 4227
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/martin.jpg",
+          "derived_from": "img/players/martin.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "4c32b8134d2b432a90b75b26ba3a88623f736f823ac9a012b7a0916c58ed58a0",
+          "width": 320,
+          "height": 320,
+          "bytes": 19771
+        }
       }
     },
     {
@@ -240,6 +400,22 @@
           "width": 160,
           "height": 160,
           "bytes": 4114
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/kounde.jpg",
+          "derived_from": "img/players/kounde.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "92c1c0810629545976b9147b206bfbb8c9e962a209071c9caf288fac26f6f36c",
+          "width": 320,
+          "height": 320,
+          "bytes": 19163
         }
       }
     },
@@ -265,6 +441,22 @@
           "height": 160,
           "bytes": 4107
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/eric.jpg",
+          "derived_from": "img/players/eric.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "7ce1f6230c15c0a7b807370fbf18c186755e833a04a4602aea9640a819d601e7",
+          "width": 320,
+          "height": 320,
+          "bytes": 20285
+        }
       }
     },
     {
@@ -288,6 +480,30 @@
           "width": 160,
           "height": 160,
           "bytes": 52574
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/espart.jpg",
+          "derived_from": "img/players/espart.png",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "a5f3863098073ac771d737b12a80e99735da6f7775de21304e3b2a23c509a841",
+          "width": 320,
+          "height": 320,
+          "bytes": 19764
+        },
+        "web": {
+          "path": "img/players/web/espart.jpg",
+          "derived_from": "img/players/espart.png",
+          "sha256": "c0006d8211ae4eb1458063d12c0c1b57742e8c58b8dfaafa608dd696c7c0ac44",
+          "width": 940,
+          "height": 940,
+          "bytes": 127442
         }
       }
     },
@@ -313,6 +529,22 @@
           "height": 160,
           "bytes": 4076
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/gavi.jpg",
+          "derived_from": "img/players/gavi.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "71f49e2e506510d557f06839cbc46b069a2b8ca176149c35845059e8a2e0894a",
+          "width": 320,
+          "height": 320,
+          "bytes": 19281
+        }
       }
     },
     {
@@ -336,6 +568,22 @@
           "width": 160,
           "height": 160,
           "bytes": 4286
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/fermin.jpg",
+          "derived_from": "img/players/fermin.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "117ab0fd429bb82a60f866c85a654afda8c7c7068d9bb49e974f53ceeba396cc",
+          "width": 320,
+          "height": 320,
+          "bytes": 20739
         }
       }
     },
@@ -361,6 +609,22 @@
           "height": 160,
           "bytes": 4208
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/pedri.jpg",
+          "derived_from": "img/players/pedri.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "a0ebfb0366c7ed23972e5b979e62dec6fc527b2d846b38a89145cdb838e0e40f",
+          "width": 320,
+          "height": 320,
+          "bytes": 20870
+        }
       }
     },
     {
@@ -384,6 +648,30 @@
           "width": 160,
           "height": 160,
           "bytes": 51428
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/rodri.jpg",
+          "derived_from": "img/players/rodri.png",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "0e839e8b98a0dc9392622b1ce39c982860af6ce7b6a1c121d9208d644f582b49",
+          "width": 320,
+          "height": 320,
+          "bytes": 17563
+        },
+        "web": {
+          "path": "img/players/web/rodri.jpg",
+          "derived_from": "img/players/rodri.png",
+          "sha256": "42d832739667c4e6473346494b20bec1870e2cf0a302420b7d8a52f1dc9958b6",
+          "width": 940,
+          "height": 940,
+          "bytes": 127669
         }
       }
     },
@@ -409,6 +697,22 @@
           "height": 160,
           "bytes": 3967
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/olmo.jpg",
+          "derived_from": "img/players/olmo.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "9ccf02cb2dbe2881849b3be241ea7892ecaf523cfc3946cf496955e29abd88ff",
+          "width": 320,
+          "height": 320,
+          "bytes": 19620
+        }
       }
     },
     {
@@ -432,6 +736,30 @@
           "width": 160,
           "height": 160,
           "bytes": 54423
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/dejong.jpg",
+          "derived_from": "img/players/dejong.png",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "effefa47c06f5d642cc59bfc6d50926b61c0fd57cfd0a8bbb4dc1d5e2e6df67c",
+          "width": 320,
+          "height": 320,
+          "bytes": 20304
+        },
+        "web": {
+          "path": "img/players/web/dejong.jpg",
+          "derived_from": "img/players/dejong.png",
+          "sha256": "fa0e195aaf50b80aac7b7ca4c0f6d4e85d9d7e4b152bfee7d987437e076bece9",
+          "width": 940,
+          "height": 940,
+          "bytes": 145051
         }
       }
     },
@@ -457,6 +785,22 @@
           "height": 160,
           "bytes": 4196
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/bernal.jpg",
+          "derived_from": "img/players/bernal.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "a78e3e573aad36bbf207e2155ad498b927c7ed03901868cb25928fd777752cad",
+          "width": 320,
+          "height": 320,
+          "bytes": 19155
+        }
       }
     },
     {
@@ -480,6 +824,22 @@
           "width": 160,
           "height": 160,
           "bytes": 4006
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/yamal.jpg",
+          "derived_from": "img/players/yamal.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "beca1f31a5cd4327bc5c8e09a9d2912c56d2e194723aec2a6812c3922b89ef12",
+          "width": 320,
+          "height": 320,
+          "bytes": 21917
         }
       }
     },
@@ -505,6 +865,22 @@
           "height": 160,
           "bytes": 4028
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/raphinha.jpg",
+          "derived_from": "img/players/raphinha.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "793a5dc129bb273e55293f49a67f25a2b6a1118edd857d8a185b7909c1770ffe",
+          "width": 320,
+          "height": 320,
+          "bytes": 20003
+        }
       }
     },
     {
@@ -528,6 +904,22 @@
           "width": 160,
           "height": 160,
           "bytes": 4325
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/jesus.jpg",
+          "derived_from": "img/players/jesus.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "3fe0ac5aebbd0c1b3c8dbf62d76186f3e97127b8b5950d5614f80020d17ace58",
+          "width": 320,
+          "height": 320,
+          "bytes": 18431
         }
       }
     },
@@ -553,6 +945,22 @@
           "height": 160,
           "bytes": 3549
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/adeyemi.jpg",
+          "derived_from": "img/players/adeyemi.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "eb55c5052bc8e3eadf2c22f4a0841b3c918d281c28f5930b4f7313f37359be2a",
+          "width": 320,
+          "height": 320,
+          "bytes": 16492
+        }
       }
     },
     {
@@ -576,6 +984,22 @@
           "width": 160,
           "height": 160,
           "bytes": 4451
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/gordon.jpg",
+          "derived_from": "img/players/gordon.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "7533d8f28707cf2beb7e489b1ca2271fb970fa01979c01781e2850a17787023d",
+          "width": 320,
+          "height": 320,
+          "bytes": 19185
         }
       }
     },
@@ -601,6 +1025,22 @@
           "height": 160,
           "bytes": 3930
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/bardghji.jpg",
+          "derived_from": "img/players/bardghji.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "aee0d3478d17537eb1c6f0d0b0a6e91a8e95ac3b97391d37cfd1223799832ab8",
+          "width": 320,
+          "height": 320,
+          "bytes": 20011
+        }
       }
     },
     {
@@ -624,6 +1064,22 @@
           "width": 160,
           "height": 160,
           "bytes": 3740
+        }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/bisiwu.jpg",
+          "derived_from": "img/players/bisiwu.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "521c618a81ebee6240f43aef4101898dcd7125e1b191a45df93f1f8aabc4ff47",
+          "width": 320,
+          "height": 320,
+          "bytes": 18735
         }
       }
     },
@@ -649,7 +1105,24 @@
           "height": 160,
           "bytes": 4339
         }
+      },
+      "derived": {
+        "face": {
+          "path": "img/players/face/abdelkarim.jpg",
+          "derived_from": "img/players/abdelkarim.jpg",
+          "crop_box": [
+            258,
+            47,
+            682,
+            470
+          ],
+          "sha256": "f6c83343a3bc100a1ad902cb255e8532b8633f4c5a8b66a9c7a5565a4373ff72",
+          "width": 320,
+          "height": 320,
+          "bytes": 19952
+        }
       }
     }
-  ]
+  ],
+  "derived_note": "Pliki w img/players/face i img/players/web są pochodnymi oryginałów (wycinek głowy i ramion 320×320 oraz JPEG zamiast PNG) wygenerowanymi przez tools/make_web_photos.py."
 }

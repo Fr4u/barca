@@ -417,13 +417,14 @@ code { font-size: .9em; background: rgba(255,255,255,.08); padding: .1em .4em; b
 .roster { max-width: 1600px; margin: 0 auto; border-top: 2px solid var(--paper); }
 .ro-group { font-family: var(--f-d); font-stretch: 75%; font-weight: 650; text-transform: uppercase; letter-spacing: .1em; font-size: 12px; color: var(--gold); padding: 26px 0 10px; border-bottom: 1px solid var(--line); }
 .ro {
-  position: relative; width: 100%; display: grid; grid-template-columns: 110px minmax(0, 1fr) 190px 140px 30px; align-items: center; gap: 16px;
+  position: relative; width: 100%; display: grid; grid-template-columns: 96px 72px minmax(0, 1fr) 190px 140px 30px; align-items: center; gap: 18px;
   padding: 16px 4px; border-bottom: 1px solid var(--line); text-align: left; overflow: hidden; --c: var(--c-mid); isolation: isolate;
 }
 .ro.gk { --c: var(--c-gk); } .ro.def { --c: var(--c-def); } .ro.fwd { --c: var(--c-fwd); }
 .ro::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--blau) 0%, var(--grana) 100%); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .55s var(--ease); }
 .ro:hover::before { transform: scaleY(1); }
-.ro .ro-thumb { display: none; }
+.ro .ro-thumb { width: 72px; height: 72px; box-shadow: 0 0 0 2px var(--c); transition: transform .55s var(--ease), box-shadow .3s; }
+.ro:hover .ro-thumb { transform: scale(1.08); box-shadow: 0 0 0 2px var(--paper); }
 .ro-num { font-family: var(--f-d); font-weight: 900; font-stretch: 125%; font-size: clamp(34px, 3.4vw, 56px); line-height: .85; color: transparent; -webkit-text-stroke: 1.3px var(--paper-3); letter-spacing: -.03em; transition: -webkit-text-stroke-color .3s, color .3s; }
 .ro:hover .ro-num { color: var(--paper); -webkit-text-stroke-color: var(--paper); }
 .ro-name { font-family: var(--f-d); font-weight: 850; font-stretch: 118%; text-transform: uppercase; font-size: clamp(26px, 3.6vw, 64px); line-height: .9; letter-spacing: -.025em; transition: transform .55s var(--ease); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.02; padding-top: .1em; }
@@ -446,6 +447,7 @@ code { font-size: .9em; background: rgba(255,255,255,.08); padding: .1em .4em; b
 .ph > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; opacity: 0; transition: opacity .7s ease; }
 .ph img.ok { opacity: 1; }
+.ph img.face { object-position: 50% 50%; }
 .ph.square { border-radius: 0; }
 
 /* ---------- profil zawodnika ---------- */
@@ -517,7 +519,8 @@ a.pl-credit:hover { color: var(--paper); }
   .chapter-head { grid-template-columns: 1fr; }
   .lineup-list { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
-  .ro { grid-template-columns: 80px minmax(0, 1fr) 150px 30px; }
+  .ro { grid-template-columns: 70px 60px minmax(0, 1fr) 150px 30px; }
+  .ro .ro-thumb { width: 60px; height: 60px; }
   .ro-nat { display: none; }
 }
 @media (max-width: 720px) {

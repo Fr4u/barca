@@ -234,7 +234,11 @@
         img.referrerPolicy = 'no-referrer';
         img.onload = () => { img.classList.add('ok'); el.classList.add('has-img'); };
         img.onerror = () => img.remove();
-        img.src = el.dataset.mode === 'token' && d.thumb ? d.thumb : d.src;
+        // kółka (znaczniki, listy) dostają wycinek twarzy, profile i podgląd pełny portret
+        const small = el.dataset.mode === 'token';
+        const src = small ? (d.face || d.thumb || d.src) : d.src;
+        if (small && d.face) img.classList.add('face');
+        img.src = src;
         el.appendChild(img);
       });
     },
@@ -973,8 +977,8 @@
     SQUAD.forEach((p) => {
       if (p.line !== line) { line = p.line; html += `<div class="ro-group" data-line="${line}">${LINE_NAME[line]}</div>`; }
       html += `<button class="ro ${LINE_CLS[p.line]}" data-pid="${p.id}" data-line="${p.line}" data-cursor="Otwórz">
-        ${phHTML(p, 'token', 'ro-thumb')}
         <span class="ro-num">${p.num}</span>
+        ${phHTML(p, 'token', 'ro-thumb')}
         <span class="ro-name">${esc(p.name)}${p.tags.includes('nowy 2026') ? '<span class="ro-new">Nowy</span>' : ''}</span>
         <span class="ro-pos">${p.pos.join(' · ')}</span>
         <span class="ro-nat">${esc(p.nat)}</span>
